@@ -1,0 +1,44 @@
+{
+  "parametros": {
+    "partidas": 30000,
+    "evaluacion": 3000,
+    "cada": 5000,
+    "alpha": 0.25,
+    "epsilon": 0.1,
+    "semilla": 2026,
+    "salida": "resultados_triqui"
+  },
+  "antes": {
+    "X": {
+      "ganadas": 81.97,
+      "empatadas": 6.37,
+      "perdidas": 11.67,
+      "n": 3000
+    },
+    "O": {
+      "ganadas": 52.77,
+      "empatadas": 8.7,
+      "perdidas": 38.53,
+      "n": 3000
+    }
+  },
+  "despues": {
+    "X": {
+      "ganadas": 99.17,
+      "empatadas": 0.83,
+      "perdidas": 0,
+      "n": 3000
+    },
+    "O": {
+      "ganadas": 81.63,
+      "empatadas": 5.03,
+      "perdidas": 13.33,
+      "n": 3000
+    }
+  },
+  "estados_aprendidos": {
+    "X": 1255,
+    "O": 1471
+  },
+  "nota": "Evaluación greedy, epsilon=0, sin actualizaciones contra rival aleatorio. Empates y derrotas tienen utilidad 0."
+}
