@@ -78,7 +78,4 @@ docs/
 
 Se utilizaron **Codex** y **Claude Code** como apoyo para el desarrollo del código, la documentación y la organización de la implementación y su evaluación. El estudiante debe **declararlo explícitamente en el video** y verificar personalmente el código y la evidencia. El archivo [`docs/declaracion_ia.md`](docs/declaracion_ia.md) amplía esta información.
 
-## Entrega académica
-
-El enunciado solicita **video de 25–35 minutos más código fuente**, antes del **viernes 20 de noviembre de 2026 a las 9:00 p. m.**, y exige que el estudiante aparezca en cámara. El video **no está incluido** en este repositorio: debe entregarse también por el medio indicado por la asignatura.
 
