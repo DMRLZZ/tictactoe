@@ -1,9 +1,11 @@
 """Pruebas básicas del juego, aprendizaje y evaluación sin cambios de valores."""
+import contextlib
+import io
 import random
 import unittest
 
 from triqui_refuerzo import (
-    AgenteTD, VACIO, colocar, evaluar, movimientos_legales,
+    AgenteTD, VACIO, colocar, evaluar, mostrar_partida, movimientos_legales,
     partida_entrenamiento, resultado,
 )
 
@@ -63,6 +65,15 @@ class TestAprendizaje(unittest.TestCase):
         for _ in range(20):
             self.assertIn(partida_entrenamiento(x, o), (-1, 0, 1))
         self.assertGreater(x.actualizaciones + o.actualizaciones, 0)
+
+    def test_partida_de_demostracion_no_entrena(self):
+        x, o = self.crear(1, 10), self.crear(-1, 11)
+        for _ in range(50):
+            partida_entrenamiento(x, o)
+        antes = (dict(x.valores), x.actualizaciones, x.exploraciones)
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertIn(mostrar_partida(x, 7, pausa=0), (-1, 0, 1))
+        self.assertEqual((x.valores, x.actualizaciones, x.exploraciones), antes)
 
 
 if __name__ == "__main__":
