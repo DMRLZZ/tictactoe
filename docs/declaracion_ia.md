@@ -1,6 +1,6 @@
 # Declaración del uso de inteligencia artificial
 
-En este proyecto se utilizó **ChatGPT (OpenAI)** como herramienta de apoyo para:
+En este proyecto se utilizaron **Codex** y **Claude Code** como herramientas de apoyo para:
 
 - Diseñar y redactar una implementación educativa de aprendizaje por refuerzo en Python.
 - Estructurar el entrenamiento por autojuego y la evaluación contra un jugador aleatorio.

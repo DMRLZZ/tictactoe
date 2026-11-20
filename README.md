@@ -17,10 +17,11 @@ Por defecto se ejecutan **30 000 partidas de autojuego**, con tasa de aprendizaj
 
 ```bash
 python triqui_refuerzo.py --partidas 60000 --evaluacion 3000 --cada 5000
+python triqui_refuerzo.py --partida   # al final, una partida del agente entrenado contra el rival aleatorio, jugada a jugada
 python -m unittest discover -s tests -v
 ```
 
-Puedes ajustar: `--partidas`, `--evaluacion`, `--cada`, `--alpha`, `--epsilon`, `--semilla` y `--salida`.
+Puedes ajustar: `--partidas`, `--evaluacion`, `--cada`, `--alpha`, `--epsilon`, `--semilla`, `--salida`, `--partida` y `--pausa`.
 
 ## Qué hace el programa
 
@@ -75,7 +76,7 @@ docs/
 
 ## Uso de inteligencia artificial
 
-Se utilizó **ChatGPT (OpenAI)** para apoyar el desarrollo, documentación y organización de la implementación y su evaluación. El estudiante debe **declararlo explícitamente en el video** y verificar personalmente el código y la evidencia. El archivo [`docs/declaracion_ia.md`](docs/declaracion_ia.md) amplía esta información.
+Se utilizaron **Codex** y **Claude Code** como apoyo para el desarrollo del código, la documentación y la organización de la implementación y su evaluación. El estudiante debe **declararlo explícitamente en el video** y verificar personalmente el código y la evidencia. El archivo [`docs/declaracion_ia.md`](docs/declaracion_ia.md) amplía esta información.
 
 ## Entrega académica
 
